@@ -23,7 +23,7 @@ import './xray.css'
 
 	const app = new XRayEngine(props.obj, {collapse:props.collapse, collapseExcept:props.collapseExcept})
 
-	const params = app.value(props.obj)
+	const params = app.value(props.obj, '$')
 
 	const minimized = ref(props.minimize)
 
